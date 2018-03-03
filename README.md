@@ -11,8 +11,20 @@ Data reading and writing
 Data manipulation
 -----------------
 
+Drop columns from data frame by name:
+
+``` r
+iris[!colnames(iris) %in% c("Sepal.Length","Sepal.Width")]
+```
+
 Timestamps
 ----------
 
 Plotting
 --------
+
+Four plots in one graph:
+
+``` r
+par(mfrow=c(2,2))
+```
