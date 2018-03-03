@@ -1,0 +1,30 @@
+---
+output:
+  github_document:
+    html_preview: false
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+  # fig.path = "README-"
+)
+options(tibble.print_min = 5, tibble.print_max = 5)
+```
+
+
+## R-miscellany
+
+A collection of useful R code bits I'm tired of looking up.
+
+## Data loading
+
+## Data manipulation
+
+## Timestamps
+
+## Plotting
