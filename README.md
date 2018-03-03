@@ -5,8 +5,8 @@ R-miscellany
 
 A collection of useful R code bits I'm tired of looking up.
 
-Data loading
-------------
+Data reading and writing
+------------------------
 
 Data manipulation
 -----------------
