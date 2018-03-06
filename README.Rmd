@@ -42,6 +42,33 @@ length(a) <- 5 #add 2 NA elements
 
 ### Timestamps
 
+#### Interpolation for irregular intervals
+```{r eval=FALSE}
+library(zoo)
+
+# dataset with irregular time intervals
+t_irr <- as.POSIXct(c('2017-01-01T00:00:00S','2017-01-01T00:02:01S','2017-01-01T00:07:32S',
+                      '2017-01-01T00:10:00S'), format = '%Y-%m-%dT%H:%M:%SS')
+vals <- c(0,5,9,10)
+df1 <- data.frame(t_irr,vals)
+
+# time sequence with regular intervals
+t_seq <- zoo(order.by=(as.POSIXct(seq(min(df1$t_irr), max(df1$t_irr), by = '1 min'))))
+
+# merge irregular time series with t_seq
+t_merged <- zoo::merge.zoo(zoo(x=df1[,c('vals')], order.by = df1$t_irr), t_seq)
+
+# linear interpolation
+t_interpolated <- zoo::na.approx(t_merged)
+
+# discard rows where timestamp is not from t_seq
+t_interpolated_2 <- t_interpolated[index(t_interpolated) %in% index(t_seq)]
+
+# convert zoo object to data frame
+t_interpolated_3 <- zoo::fortify.zoo(t_interpolated_2)
+```
+
+
 ### Plots
 
 Four plots in one graph:
