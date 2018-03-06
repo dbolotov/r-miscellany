@@ -32,6 +32,13 @@ Drop columns from data frame by name:
 iris[!colnames(iris) %in% c("Sepal.Length","Sepal.Width")]
 ```
 
+Add `NA` padding to end of a vector:
+```{r}
+a <- c(1,2,3)
+length(a) <- 5 #add 2 NA elements
+```
+
+
 
 ### Timestamps
 

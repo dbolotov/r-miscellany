@@ -7,16 +7,13 @@
 -   [Rmarkdown template](#rmarkdown-template)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-R-miscellany
-------------
+### R-miscellany
 
 A collection of useful R code bits I'm tired of looking up.
 
-Data reading and writing
-------------------------
+### Data reading and writing
 
-Data manipulation
------------------
+### Data manipulation
 
 Drop columns from data frame by name:
 
@@ -24,11 +21,16 @@ Drop columns from data frame by name:
 iris[!colnames(iris) %in% c("Sepal.Length","Sepal.Width")]
 ```
 
-Timestamps
-----------
+Add `NA` padding to end of a vector:
 
-Plots
------
+``` r
+a <- c(1,2,3)
+length(a) <- 5 #add 2 NA elements
+```
+
+### Timestamps
+
+### Plots
 
 Four plots in one graph:
 
@@ -36,12 +38,11 @@ Four plots in one graph:
 par(mfrow=c(2,2))
 ```
 
-Rmarkdown template
-------------------
+### Rmarkdown template
 
 ``` text
 # ---
-# title: "BD Basecamp - Best Models to PMML: Stockout Percent"
+# title: "Document Title"
 # output: 
 #   html_document:
 #     theme: cerulean
