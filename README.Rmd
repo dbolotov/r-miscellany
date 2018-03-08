@@ -40,9 +40,9 @@ length(a) <- 5 #add 2 NA elements
 
 
 
-### Timestamps
+### Time series data
 
-#### Interpolation for irregular intervals
+#### Linear interpolation for irregular intervals
 ```{r eval=FALSE}
 library(zoo)
 
@@ -76,7 +76,7 @@ Four plots in one graph:
 par(mfrow=c(2,2))
 ```
 
-### Rmarkdown template
+### Rmarkdown templates
 
 ```{text eval=FALSE}
 # ---
@@ -95,5 +95,13 @@ par(mfrow=c(2,2))
 # knitr::opts_knit$set(root.dir = "some/directory")
 # ```
 
+```
+
+
+### Extra misc
+
+Set language to English:
+```{r eval=FALSE}
+Sys.setenv(LANG='en')
 ```
 
