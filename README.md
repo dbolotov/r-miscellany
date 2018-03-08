@@ -66,9 +66,27 @@ Four plots in one graph:
 par(mfrow=c(2,2))
 ```
 
-Two series (same scale) in one graph:
+Two series in one graph (same scale):
 
-Two series (different scales) in one graph:
+``` r
+plot(ts_dat$time, ts_dat$f1, col = 'blue', type = 'o', cex = 0.3,
+     xlab = 'time', ylab = 'f1', cex.lab = 0.8, cex.axis = 0.7)
+points(ts_dat$time, ts_dat$f2, col = 'black', type = 'o', cex = 0.3,
+     title('Plot Title',cex.main = 0.9))
+```
+
+Two series in one graph (different scales):
+
+``` r
+plot(ts_dat$time, ts_dat$f1, col = 'blue', pch = 20, cex = 0.3,
+     xlab = 'time', ylab = 'f1', cex.lab = 0.8, cex.axis = 0.7)
+par(new=TRUE)
+plot(ts_dat$time, ts_dat$f2, col = 'red', pch = 19, cex = 0.3,
+     yaxt = 'n', ylab = NA, xlab = NA, lwd = 1, title('Plot Title',
+     cex.main = 0.9), cex.lab = 0.7, cex.axis = 0.7)
+axis(4, cex.axis = 0.7)
+mtext("right y axis", side=4, cex = 0.8)
+```
 
 ### Rmarkdown templates
 
@@ -96,4 +114,12 @@ Set language to English:
 
 ``` r
 Sys.setenv(LANG='en')
+```
+
+Wait for user input:
+
+``` r
+readline(prompt = 'press [enter]...')
+#> press [enter]...
+#> [1] ""
 ```
