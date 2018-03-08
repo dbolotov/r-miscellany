@@ -2,9 +2,10 @@
 -   [R-miscellany](#r-miscellany)
 -   [Data reading and writing](#data-reading-and-writing)
 -   [Data manipulation](#data-manipulation)
--   [Timestamps](#timestamps)
+-   [Time series data](#time-series-data)
 -   [Plots](#plots)
--   [Rmarkdown template](#rmarkdown-template)
+-   [Rmarkdown templates](#rmarkdown-templates)
+-   [Extra misc](#extra-misc)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 ### R-miscellany
@@ -28,9 +29,9 @@ a <- c(1,2,3)
 length(a) <- 5 #add 2 NA elements
 ```
 
-### Timestamps
+### Time series data
 
-#### Interpolation for irregular intervals
+#### Linear interpolation for irregular intervals
 
 ``` r
 library(zoo)
@@ -65,7 +66,7 @@ Four plots in one graph:
 par(mfrow=c(2,2))
 ```
 
-### Rmarkdown template
+### Rmarkdown templates
 
 ``` text
 # ---
@@ -83,4 +84,12 @@ par(mfrow=c(2,2))
 # knitr::opts_chunk$set(echo = TRUE)
 # knitr::opts_knit$set(root.dir = "some/directory")
 # ```
+```
+
+### Extra misc
+
+Set language to English:
+
+``` r
+Sys.setenv(LANG='en')
 ```
