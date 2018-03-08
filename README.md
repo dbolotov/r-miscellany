@@ -66,6 +66,10 @@ Four plots in one graph:
 par(mfrow=c(2,2))
 ```
 
+Two series (same scale) in one graph:
+
+Two series (different scales) in one graph:
+
 ### Rmarkdown templates
 
 ``` text
