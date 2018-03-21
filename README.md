@@ -123,3 +123,10 @@ readline(prompt = 'press [enter]...')
 #> press [enter]...
 #> [1] ""
 ```
+
+Print more digits for a number:
+
+``` r
+sprintf("%.12f",1.234343)
+#> [1] "1.234343000000"
+```

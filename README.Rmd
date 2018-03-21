@@ -137,3 +137,9 @@ Wait for user input:
 readline(prompt = 'press [enter]...')
 ```
 
+Print more digits for a number:
+```{r}
+sprintf("%.12f",1.234343)
+```
+
+
