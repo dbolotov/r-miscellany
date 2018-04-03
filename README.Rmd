@@ -103,7 +103,9 @@ mtext("right y axis", side=4, cex = 0.8)
 ```
 
 
-### Rmarkdown templates
+### Rmarkdown
+
+#### template
 
 ```{text eval=FALSE}
 # ---
@@ -124,6 +126,15 @@ mtext("right y axis", side=4, cex = 0.8)
 
 ```
 
+#### `theme`
+
+Themes: "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti". Pass null for no theme (in this case you can use the css parameter to add your own styles).
+
+#### `highlight`
+
+Styles: "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", "haddock", "textmate". Pass null to prevent syntax highlighting.
+
+[More info](https://rmarkdown.rstudio.com/html_document_format.html)
 
 ### Extra misc
 

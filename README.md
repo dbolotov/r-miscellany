@@ -4,7 +4,7 @@
 -   [Data manipulation](#data-manipulation)
 -   [Time series data](#time-series-data)
 -   [Plots](#plots)
--   [Rmarkdown templates](#rmarkdown-templates)
+-   [Rmarkdown](#rmarkdown)
 -   [Extra misc](#extra-misc)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
@@ -88,7 +88,9 @@ axis(4, cex.axis = 0.7)
 mtext("right y axis", side=4, cex = 0.8)
 ```
 
-### Rmarkdown templates
+### Rmarkdown
+
+#### template
 
 ``` text
 # ---
@@ -107,6 +109,16 @@ mtext("right y axis", side=4, cex = 0.8)
 # knitr::opts_knit$set(root.dir = "some/directory")
 # ```
 ```
+
+#### `theme`
+
+Themes: "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti". Pass null for no theme (in this case you can use the css parameter to add your own styles).
+
+#### `highlight`
+
+Styles: "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", "haddock", "textmate". Pass null to prevent syntax highlighting.
+
+[More info](https://rmarkdown.rstudio.com/html_document_format.html)
 
 ### Extra misc
 
