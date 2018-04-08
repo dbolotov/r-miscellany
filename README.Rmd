@@ -19,9 +19,9 @@ options(tibble.print_min = 5, tibble.print_max = 5)
 ```
 
 
-### R-miscellany
+### Introduction
 
-A collection of useful R code bits I'm tired of looking up.
+This is a collection of useful R code bits I'm tired of looking up.
 
 ### Data reading and writing
 

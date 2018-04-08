@@ -1,5 +1,5 @@
 
--   [R-miscellany](#r-miscellany)
+-   [Introduction](#introduction)
 -   [Data reading and writing](#data-reading-and-writing)
 -   [Data manipulation](#data-manipulation)
 -   [Time series data](#time-series-data)
@@ -8,9 +8,9 @@
 -   [Extra misc](#extra-misc)
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-### R-miscellany
+### Introduction
 
-A collection of useful R code bits I'm tired of looking up.
+This is a collection of useful R code bits I'm tired of looking up.
 
 ### Data reading and writing
 
