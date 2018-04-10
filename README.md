@@ -120,6 +120,10 @@ Styles: "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenbu
 
 [More info](https://rmarkdown.rstudio.com/html_document_format.html)
 
+#### LaTeX symbols
+
+-   [List of LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
+
 ### Extra misc
 
 Set language to English:
