@@ -1,16 +1,17 @@
 
--   [Introduction](#introduction)
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+### Introduction
+
+This is a collection of useful R code bits I'm tired of looking up.
+
+### Contents
+
 -   [Data reading and writing](#data-reading-and-writing)
 -   [Data manipulation](#data-manipulation)
 -   [Time series data](#time-series-data)
 -   [Plots](#plots)
 -   [Rmarkdown](#rmarkdown)
--   [Extra misc](#extra-misc)
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-### Introduction
-
-This is a collection of useful R code bits I'm tired of looking up.
+-   [Extra miscellaneous](#extra-misc)
 
 ### Data reading and writing
 
