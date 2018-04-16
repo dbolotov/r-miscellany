@@ -144,7 +144,7 @@ Styles: "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenbu
 
 #### LaTeX symbols
 - [List of LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
-
+- [R markdown math symbols](https://francoisbirgand.github.io/RMarkdown_instructions.html)
 
 ### Extra misc
 
