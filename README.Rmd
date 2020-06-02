@@ -89,6 +89,10 @@ trace(grDevices:::png, quote({
 }), print = FALSE)
 ```
 
+```{r eval=FALSE}
+TEST
+```
+
 #### Plots with base graphics
 
 Four plots in one graph:
