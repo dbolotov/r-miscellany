@@ -1,17 +1,18 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+
 ### Introduction
 
-This is a collection of useful R code bits I'm tired of looking up.
+This is a collection of useful R code bits I’m tired of looking up.
 
 ### Contents
 
--   [Data reading and writing](#data-reading-and-writing)
--   [Data manipulation](#data-manipulation)
--   [Time series data](#time-series-data)
--   [Plots](#plots)
--   [Rmarkdown](#rmarkdown)
--   [Extra miscellaneous](#extra-misc)
+  - [Data reading and writing](#data-reading-and-writing)
+  - [Data manipulation](#data-manipulation)
+  - [Time series data](#time-series-data)
+  - [Plots](#plots)
+  - [Rmarkdown](#rmarkdown)
+  - [Extra miscellaneous](#extra-misc)
 
 ### Data reading and writing
 
@@ -32,7 +33,7 @@ length(a) <- 5 #add 2 NA elements
 
 ### Time series data
 
-#### Linear interpolation for irregular intervals
+#### Linear interpolation for irregular intervals using `zoo`
 
 ``` r
 library(zoo)
@@ -59,7 +60,14 @@ t_interpolated_2 <- t_interpolated[index(t_interpolated) %in% index(t_seq)]
 t_interpolated_3 <- zoo::fortify.zoo(t_interpolated_2)
 ```
 
-### Plots
+### Plotting
+
+#### Plots with `ggplot2`
+
+Add the following blurb to an R script on Windows to avoid jagged plot
+lines ([github issue](https://github.com/rstudio/rstudio/issues/2142)):
+
+#### Plots with base graphics
 
 Four plots in one graph:
 
@@ -93,7 +101,7 @@ mtext("right y axis", side=4, cex = 0.8)
 
 #### template
 
-``` text
+```` text
 # ---
 # title: "Document Title"
 # output: 
@@ -109,22 +117,29 @@ mtext("right y axis", side=4, cex = 0.8)
 # knitr::opts_chunk$set(echo = TRUE)
 # knitr::opts_knit$set(root.dir = "some/directory")
 # ```
-```
+````
 
 #### `theme`
 
-Themes: "default", "cerulean", "journal", "flatly", "readable", "spacelab", "united", "cosmo", "lumen", "paper", "sandstone", "simplex", "yeti". Pass null for no theme (in this case you can use the css parameter to add your own styles).
+Themes: “default”, “cerulean”, “journal”, “flatly”, “readable”,
+“spacelab”, “united”, “cosmo”, “lumen”, “paper”, “sandstone”,
+“simplex”, “yeti”. Pass null for no theme (in this case you can use
+the css parameter to add your own styles).
 
 #### `highlight`
 
-Styles: "default", "tango", "pygments", "kate", "monochrome", "espresso", "zenburn", "haddock", "textmate". Pass null to prevent syntax highlighting.
+Styles: “default”, “tango”, “pygments”, “kate”, “monochrome”,
+“espresso”, “zenburn”, “haddock”, “textmate”. Pass null to prevent
+syntax highlighting.
 
 [More info](https://rmarkdown.rstudio.com/html_document_format.html)
 
 #### LaTeX symbols
 
--   [List of LaTeX mathematical symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
--   [R markdown math symbols](https://francoisbirgand.github.io/RMarkdown_instructions.html)
+  - [List of LaTeX mathematical
+    symbols](https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols)
+  - [R markdown math
+    symbols](https://francoisbirgand.github.io/RMarkdown_instructions.html)
 
 ### Extra misc
 

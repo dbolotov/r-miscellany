@@ -48,7 +48,7 @@ length(a) <- 5 #add 2 NA elements
 
 ### Time series data
 
-#### Linear interpolation for irregular intervals
+#### Linear interpolation for irregular intervals using `zoo`
 ```{r eval=FALSE}
 library(zoo)
 
@@ -75,7 +75,21 @@ t_interpolated_3 <- zoo::fortify.zoo(t_interpolated_2)
 ```
 
 
-### Plots
+### Plotting
+
+#### Plots with `ggplot2`
+
+Add the following blurb to an R script on Windows to avoid jagged plot lines ([github issue](https://github.com/rstudio/rstudio/issues/2142)):
+```{r eval=FALSE, echo=FALSE}
+trace(grDevices:::png, quote({
+  if (missing(type) && missing(antialias)) {
+    type <- "cairo-png"
+    antialias <- "subpixel"
+  }
+}), print = FALSE)
+```
+
+#### Plots with base graphics
 
 Four plots in one graph:
 ```{r eval=FALSE}
