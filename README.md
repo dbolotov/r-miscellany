@@ -67,6 +67,15 @@ t_interpolated_3 <- zoo::fortify.zoo(t_interpolated_2)
 Add the following blurb to an R script on Windows to avoid jagged plot
 lines ([github issue](https://github.com/rstudio/rstudio/issues/2142)):
 
+``` r
+trace(grDevices:::png, quote({
+  if (missing(type) && missing(antialias)) {
+    type <- "cairo-png"
+    antialias <- "subpixel"
+  }
+}), print = FALSE)
+```
+
 #### Plots with base graphics
 
 Four plots in one graph:

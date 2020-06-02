@@ -80,6 +80,7 @@ t_interpolated_3 <- zoo::fortify.zoo(t_interpolated_2)
 #### Plots with `ggplot2`
 
 Add the following blurb to an R script on Windows to avoid jagged plot lines ([github issue](https://github.com/rstudio/rstudio/issues/2142)):
+
 ```{r eval=FALSE}
 trace(grDevices:::png, quote({
   if (missing(type) && missing(antialias)) {
@@ -87,10 +88,6 @@ trace(grDevices:::png, quote({
     antialias <- "subpixel"
   }
 }), print = FALSE)
-```
-
-```{r eval=FALSE}
-TEST
 ```
 
 #### Plots with base graphics
